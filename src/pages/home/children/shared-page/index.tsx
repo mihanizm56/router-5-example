@@ -7,7 +7,7 @@ const action = async ({ router, toState }) => {
     title: 'Shared page',
     content: (
       <RouteNode nodeName={toState.name}>
-        {({ route, content }) => <Page router={router} />}
+        {() => <Page router={router} />}
       </RouteNode>
     ),
   };

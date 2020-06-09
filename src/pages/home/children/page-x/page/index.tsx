@@ -12,6 +12,12 @@ export const Page = memo(({ router }: PropType) => {
       <button onClick={() => router.navigate('home.page-y')} type="button">
         To Y
       </button>
+      <button
+        onClick={() => router.navigate('home.page-x.page-x-child')}
+        type="button"
+      >
+        To CHILD
+      </button>
     </div>
   );
 });
