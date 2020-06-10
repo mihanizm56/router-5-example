@@ -5,4 +5,6 @@ type PropType = {
   router: Router;
 };
 
-export const Page = memo(({ router }: PropType) => <h1>shared page</h1>);
+export const Page = memo(({ router }: PropType) => {
+  return <p>shared page 2</p>;
+});
